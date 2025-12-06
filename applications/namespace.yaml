@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myplatform-root
+  name: namespaces
   namespace: argocd   # ArgoCD must watch this namespace (usually argocd)
 spec:
   project: default     # ArgoCD project name
