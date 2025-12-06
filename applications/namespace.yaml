@@ -11,7 +11,7 @@ spec:
     path: namespace   # Folder with Kubernetes YAMLs/Helm chart
   destination:
     server: https://kubernetes.default.svc  # Indicates in-cluster deployment
-    namespace: argocd             # Namespace where app will be deployed
+    namespace: myplatform             # Namespace where app will be deployed
   syncPolicy:
     automated:           # Enable auto-sync
       prune: true        # Delete resources removed from Git
