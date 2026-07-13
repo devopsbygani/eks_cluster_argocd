@@ -11,3 +11,6 @@ sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
 
 # to login from cli
 argocd login <url?>
+
+# for default password
+argocd admin initial-password -n argocd

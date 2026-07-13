@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: platform-root
   namespace: argocd   # ArgoCD must watch this namespace (usually argocd)
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io  # Ensures children are deleted when parent is deleted
 spec:
   project: default     # ArgoCD project name
   source:
